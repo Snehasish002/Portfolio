@@ -1,0 +1,24 @@
+.blog{
+    background: rgba(128, 0, 128, 0.121);
+    border: 1.5px solid purple;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.4s;
+    
+}
+
+.blog:hover {
+
+    background: white;
+    color: purple;
+    border-color: transparent;
+
+}
+
+.blog2 {
+    background: white;
+    color: purple;
+    border-color: transparent;
+    padding: 10px 30px;
+    border-radius: 30px;
+}

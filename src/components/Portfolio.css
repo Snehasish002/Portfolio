@@ -1,0 +1,26 @@
+#stack{
+    background: rgba(65, 65, 65, 0.318);
+}
+
+
+@media (max-width: 750px) {
+    #description{
+        font-size: 10px;
+    }
+
+    #date{
+        font-size: 15px;
+    }
+
+    #title{
+        font-size: 18px;
+    }
+
+    #stack {
+        font-size: 9px;
+    }
+
+    #view-site{
+        font-size: 12px;
+    }
+}
