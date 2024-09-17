@@ -27,7 +27,7 @@ const projects = [
     img: project4,
     title: "Blog App",
     description: "I developed a blog app using the MERN stack with JWT authentication, allowing users to register, log in, create posts, and edit them.",
-    date: "Sept - 2021",
+    date: "Sept - 2024",
     stack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Jwt"],
     like: <Likes />,
     links: {
