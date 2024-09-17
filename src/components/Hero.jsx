@@ -1,7 +1,6 @@
 import React from "react";
 import profile from "../assets/profile.png";
 import { TypeAnimation } from "react-type-animation";
-import shinyEffect from "./shinyEffect";
 import './Social.css'
 import {
   AiOutlineGithub,
