@@ -16,7 +16,7 @@ const projects = [
     description:
       "A full-stack food delivery application where users can browse menus, place orders, and track their delivery status.",
     date: "Aug - Sept 2024",
-    stack: ["React Js", "Node js", "Express js", "Mongo DB", "HTML", "CSS", "Stripe", "Jwt"],
+    stack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Stripe", "Jwt"],
     like: <Likes />,
     links: {
       site: "https://food-delivery-frontend-g6ya.onrender.com",
@@ -26,9 +26,9 @@ const projects = [
   {
     img: project4,
     title: "Blog App",
-    description: "An e-commerce platform with various features.",
-    date: 2021,
-    stack: ["React Js", "Node js", "Express js", "Mongo DB", "HTML", "CSS", "Jwt"],
+    description: "I developed a blog app using the MERN stack with JWT authentication, allowing users to register, log in, create posts, and edit them.",
+    date: "Sept - 2021",
+    stack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Jwt"],
     like: <Likes />,
     links: {
       site: "https://blog-app-cl3f.onrender.com",
@@ -36,42 +36,29 @@ const projects = [
     },
   },
   {
+    img: project5,
+    title: "Google Gemini",
+    description: "I built a Google Gemini project using the Google Gemini API with React and Node.js. This project demonstrates my expertise in integrating APIs and developing seamless, responsive applications.",
+    date: "Sept - 2024",
+    stack: ["HTML", "CSS", "javaScript","ReactJs","NodeJs", "Gemini API"],
+    like: <Likes />,
+    links: {
+      site: "https://google-gemini-cwl9.onrender.com",
+      github: "https://github.com/Snehasish002/Google-Gemini",
+    },
+  },
+  {
     img: project2,
     title: "Image Search App",
     description: "A responsive web application that allows users to search for images using the Unsplash API. The app dynamically displays search results with image previews and links to the source, offering a seamless user experience.",
-    date: "Aug 2024",
+    date: "Aug - 2024",
     stack: ["HTML", "CSS", "javaScript", "Unsplash API"],
     like: <Likes />,
     links: {
       site: "https://snehasish-img-search.onrender.com",
       github: "https://github.com/Snehasish002/Image-Search-App--API-",
     },
-  },
-  {
-    img: project5,
-    title: "Project #4",
-    description: "A mobile-friendly application using React Native.",
-    date: 2021,
-    stack: ["Node.js", "Express.js", "HTML"],
-    like: <Likes />,
-    links: {
-      site: "#",
-      github: "#",
-    },
-  },
-  {
-    img: project6,
-    title: "Project #5",
-    description:
-      "A data visualization project using D3.js and other libraries.",
-    date: 2021,
-    stack: ["Node.js", "Express.js", "HTML"],
-    like: <Likes />,
-    links: {
-      site: "#",
-      github: "#",
-    },
-  },
+  }
 ];
 
 const Portfolio = () => {
