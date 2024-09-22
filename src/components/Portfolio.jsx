@@ -8,6 +8,7 @@ import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
 import Likes from "./Like";
 import Reavel from "./Reavel";
 import "./Portfolio.css";
+import {asserts} from "../assets/assest"
 
 const projects = [
   {
@@ -16,7 +17,17 @@ const projects = [
     description:
       "A full-stack food delivery application where users can browse menus, place orders, and track their delivery status.",
     date: "Aug - Sept 2024",
-    stack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Stripe", "Jwt"],
+    stack: [
+      {name: "ReactJs", icon: asserts.reactStack },
+      {name: "NodeJs", icon: asserts.nodeStack },
+      {name:"ExpressJs", icon: asserts.expressStack},
+      {name:"MongoDB", icon: asserts.mongoddStack},
+      {name:"HTML", icon: asserts.htmlStack},
+      {name:"CSS", icon: asserts.cssStack},
+      {name:"Jwt", icon:asserts.jwtStack},
+      {name:"Stripe", icon:asserts.stripeStack},
+      
+    ],
     like: <Likes />,
     links: {
       site: "https://food-delivery-frontend-g6ya.onrender.com",
@@ -26,9 +37,18 @@ const projects = [
   {
     img: project4,
     title: "Blog App",
-    description: "I developed a blog app using the MERN stack with JWT authentication, allowing users to register, log in, create posts, and edit them.",
+    description:
+      "I developed a blog app using the MERN stack with JWT authentication, allowing users to register, log in, create posts, and edit them.",
     date: "Sept - 2024",
-    stack: ["ReactJs", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Jwt"],
+    stack: [
+      { name: "ReactJs", icon: asserts.reactStack },
+      { name: "NodeJs", icon: asserts.nodeStack},
+      { name: "ExpressJs", icon: asserts.expressStack },
+      { name: "MongoDB", icon: asserts.mongoddStack},
+      { name: "HTML", icon: asserts.htmlStack },
+      { name: "CSS" , icon: asserts.cssStack},
+      { name: "Jwt" , icon: asserts.jwtStack},
+    ],
     like: <Likes />,
     links: {
       site: "https://blog-app-cl3f.onrender.com",
@@ -38,9 +58,19 @@ const projects = [
   {
     img: project5,
     title: "Google Gemini",
-    description: "I built a Google Gemini project using the Google Gemini API with React and Node.js. This project demonstrates my expertise in integrating APIs and developing seamless, responsive applications.",
+    description:
+      "I built a Google Gemini project using the Google Gemini API with React and Node.js. This project demonstrates my expertise in integrating APIs and developing seamless, responsive applications.",
     date: "Sept - 2024",
-    stack: ["HTML", "CSS", "javaScript","ReactJs","NodeJs", "Gemini API"],
+    stack: [
+      
+      { name: "HTML", icon: asserts.htmlStack },
+      { name: "CSS" , icon: asserts.cssStack},
+      { name: "javaScript" , icon: asserts.jsStack},
+      { name: "ReactJs", icon: asserts.reactStack},
+      { name: "NodeJs", icon: asserts.nodeStack},
+      { name: "Gemini API", icon: asserts.apiStack},
+      
+    ],
     like: <Likes />,
     links: {
       site: "https://google-gemini-cwl9.onrender.com",
@@ -50,15 +80,22 @@ const projects = [
   {
     img: project2,
     title: "Image Search App",
-    description: "A responsive web application that allows users to search for images using the Unsplash API. The app dynamically displays search results with image previews and links to the source, offering a seamless user experience.",
+    description:
+      "A responsive web application that allows users to search for images using the Unsplash API. The app dynamically displays search results with image previews and links to the source, offering a seamless user experience.",
     date: "Aug - 2024",
-    stack: ["HTML", "CSS", "javaScript", "Unsplash API"],
+    stack: [
+      { name: "HTML", icon: asserts.htmlStack },
+      { name: "CSS" , icon: asserts.cssStack},
+      { name: "javaScript" , icon: asserts.jsStack},
+      { name: "NodeJs", icon: asserts.nodeStack},
+      { name: "Unsplash API", icon: asserts.apiStack},
+    ],
     like: <Likes />,
     links: {
       site: "https://snehasish-img-search.onrender.com",
       github: "https://github.com/Snehasish002/Image-Search-App--API-",
     },
-  }
+  },
 ];
 
 const Portfolio = () => {
@@ -101,10 +138,16 @@ const Portfolio = () => {
                   {project.stack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="text-gray-200 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 rounded m-1"
+                      className="flex items-center text-gray-200 px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 rounded m-1"
                       id="stack"
                     >
-                      {tech}
+                      <img
+                        src={tech.icon}
+                        // alt={tech.name}
+                        className="w-4 h-4 mr-2"
+                      />{" "}
+                      {/* Adjust size as needed */}
+                      {tech.name}
                     </span>
                   ))}
                 </div>
