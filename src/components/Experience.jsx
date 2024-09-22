@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import './Experience.css'
 // import Reveal from './Reveal'
 
 const experiences = [
@@ -27,7 +28,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div id='experience' className='p-8 max-w-[600px] mx-auto'>
+    <div id='experience' className='p-8 max-w-[600px] mx-auto '>
         <h1 className='text-4xl text-gray-200 font-bold text-center mb-12'>Education</h1>
         <motion.div
         className='space-y-8'

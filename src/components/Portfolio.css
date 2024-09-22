@@ -1,9 +1,22 @@
 #stack{
     background: rgba(65, 65, 65, 0.318);
+    transition: 0.3s;
+    
+    
+}
+#stack:hover{
+    background: white;
+    color: purple;
+    cursor: pointer;
+    font-weight: 600;
+    
 }
 
 
 @media (max-width: 750px) {
+    #portfolio{
+        padding: 2px;
+    }
     #description{
         font-size: 10px;
     }
