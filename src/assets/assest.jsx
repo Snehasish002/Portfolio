@@ -5,7 +5,7 @@ import nodeStack from "./Stacks/node.svg"
 import jwtStack from "./Stacks/jwt.svg"
 import htmlStack from "./Stacks/html.svg"
 import cssStack from "./Stacks/css.svg"
-import apiStack from "./Stacks/api.svg"
+import apiStack from "./Stacks/Api.svg"
 import stripeStack from "./Stacks/stripe.svg"
 import jsStack from "./Stacks/js.svg"
 
