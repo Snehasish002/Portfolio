@@ -2,9 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './Experience.css'
 // import Reveal from './Reveal'
+import { asserts } from '../assets/assest'
 
 const experiences = [
-    {
+    {   
         company: 'Gandhi Institute for Technological Advancement, Bhubaneswar',
         course: "B.Tech Computer Science and Engineering",
         period: '2020-2024',

@@ -8,6 +8,7 @@ import cssStack from "./Stacks/css.svg"
 import apiStack from "./Stacks/Api.svg"
 import stripeStack from "./Stacks/stripe.svg"
 import jsStack from "./Stacks/js.svg"
+import eduIcon from "./user_icon.png"
 
 export const asserts = {
     mongoddStack,
